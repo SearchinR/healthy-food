@@ -1,0 +1,10 @@
+<!--pages/search/search.wxml-->
+<view class="cu-list grid col-1">
+  <view class="cu-item"  wx:for="{{iconList}}" >
+   <view class='flex-sub margin-right radius shadow-lg' bindtap='tabNavigate' data-page="{{item.page}}">
+    <image data-page="{{item.page}}"  src='{{item.icon}}' mode='aspectFit' class='gif-black response' style='height:240rpx'></image>
+  </view>
+    <text data-page="{{item.page}}">{{item.name}}</text>
+  </view>
+</view>
+<tabbar active="/pages/search/search"></tabbar>

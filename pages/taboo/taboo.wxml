@@ -1,0 +1,19 @@
+<!--pages/taboo/taboo.wxml-->
+ <view class="cu-bar search bg-white">
+    <view class='search-form round'>
+      <text class="icon-search"></text>
+      <input type="text" placeholder="食物禁忌查询" confirm-type="search"></input>
+    </view>
+    <view class='action'>
+      <button class='cu-btn bg-blue shadow-blur round'>食物禁忌查询</button>
+    </view>
+  </view>
+<view class="cu-bar bg-white" wx:for="{{content}}" style='padding-left:30rpx;'>
+ <navigator  url="../home/home?id={{item.id}}">
+  <view class='action text-sx'>
+    <text class='icon-title text-orange '></text> {{item.value}}
+  </view>
+  </navigator>
+</view>
+<tabbar active="/pages/search/search"></tabbar>
+

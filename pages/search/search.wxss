@@ -1,0 +1,10 @@
+/* pages/search/search.wxss */
+.bg-black{
+  background-color:#fff;
+  color:#fff;
+  width: 100%;
+}
+
+.response{
+  width:60%;
+}

@@ -1,0 +1,31 @@
+<!--pages/component/tabbar/tabbar.wxml-->
+<view class="cu-bar tabbar bg-white barsssss">
+  <view class="action" bindtap='navigator' data-page="/pages/home/home">
+    <view class='icon-cu-image' data-page="/pages/home/home">
+      <image src='/images/home1.png' data-page="/pages/home/home"></image>
+    </view>
+    <view data-page="/pages/home/home" class='{{active == "/pages/home/home" ? "text-blue" : "text-gray"}}'>主页</view>
+  </view>
+
+  <view class="action" bindtap='navigator' data-page="/pages/search/search">
+    <view class='icon-cu-image' data-page="/pages/search/search">
+      <image src='/images/chaxun1.png' data-page="/pages/search/search"></image>
+    </view>
+    <view data-page="/pages/search/search" class='{{active == "/pages/search/search" ? "text-blue" : "text-gray"}}'>食品查询</view>
+  </view>
+
+  <view class="action" bindtap='navigator' data-page="/pages/proposal/proposal">
+    <view class='icon-cu-image' data-page="/pages/proposal/proposal">
+      <image src='/images/baike1.png' data-page="/pages/proposal/proposal"></image>
+
+    </view>
+    <view data-page="/pages/proposal/proposal" class='{{active == "/pages/proposal/proposal" ? "text-blue" : "text-gray"}}'>饮食建议</view>
+  </view>
+   <view class="action" bindtap='navigator' data-page="/pages/index/index">
+    <view class='icon-cu-image' data-page="/pages/index/index">
+      <image src='/images/geren1.png' data-page="/pages/index/index"></image>
+
+    </view>
+    <view data-page="/pages/index/index" class='{{active == "/pages/index/index" ? "text-blue" : "text-gray"}}'>个人信息</view>
+  </view>
+</view>

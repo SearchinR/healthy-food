@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "tabbar": "/pages/component/tabbar/tabbar"
+  }
+}
